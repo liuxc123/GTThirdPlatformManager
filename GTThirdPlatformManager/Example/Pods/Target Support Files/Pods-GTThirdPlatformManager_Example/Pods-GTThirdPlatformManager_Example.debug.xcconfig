@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../GTThirdPlatformManager/AlipayManager/Frameworks/AlipaySDK" "${PODS_ROOT}/../../GTThirdPlatformManager/DingTalkManager/Frameworks" "${PODS_ROOT}/../../GTThirdPlatformManager/TencentManager/Frameworks/TencentOpenSDK"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GTThirdPlatformManager" "${PODS_ROOT}/Headers/Public/PTTestKit" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/WechatOpenSDK" "${PODS_ROOT}/Headers/Public/WeiboSDK"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GTThirdPlatformManager" "${PODS_CONFIGURATION_BUILD_DIR}/PTTestKit" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_ROOT}/WechatOpenSDK/OpenSDK1.8.1" "${PODS_ROOT}/WeiboSDK/libWeiboSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GTThirdPlatformManager" -isystem "${PODS_ROOT}/Headers/Public/PTTestKit" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/WechatOpenSDK" -isystem "${PODS_ROOT}/Headers/Public/WeiboSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"GTThirdPlatformManager" -l"PTTestKit" -l"SDWebImage" -l"WeChatSDK" -l"WeiboSDK" -l"c++" -l"iconv" -l"sqlite3" -l"sqlite3.0" -l"stdc++" -l"stdc++.6" -l"xml2" -l"z" -framework "AlipaySDK" -framework "AssetsLibrary" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMotion" -framework "CoreTelephony" -framework "CoreText" -framework "DTShareKit" -framework "Foundation" -framework "ImageIO" -framework "MapKit" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "TencentOpenAPI" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

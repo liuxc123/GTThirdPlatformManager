@@ -1,0 +1,1 @@
+../../../../../GTThirdPlatformManager/Classes/BaseManager/GTBaseThirdPlatformManager.h

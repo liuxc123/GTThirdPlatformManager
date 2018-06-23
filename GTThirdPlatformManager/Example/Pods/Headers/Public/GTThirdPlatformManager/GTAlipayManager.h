@@ -1,0 +1,1 @@
+../../../../../GTThirdPlatformManager/AlipayManager/GTAlipayManager.h

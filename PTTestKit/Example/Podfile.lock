@@ -1,0 +1,16 @@
+PODS:
+  - PTTestKit (0.1.0)
+
+DEPENDENCIES:
+  - PTTestKit (from `../`)
+
+EXTERNAL SOURCES:
+  PTTestKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PTTestKit: 895c4469da22c8d9a0d76987f1dd075e11a8a110
+
+PODFILE CHECKSUM: 557b132c2b191c39c571750b6dade7cecc35cda7
+
+COCOAPODS: 1.2.1

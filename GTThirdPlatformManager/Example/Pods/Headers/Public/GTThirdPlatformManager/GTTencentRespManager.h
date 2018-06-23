@@ -1,0 +1,1 @@
+../../../../../GTThirdPlatformManager/TencentManager/GTTencentRespManager.h

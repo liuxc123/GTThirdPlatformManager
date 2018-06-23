@@ -1,0 +1,49 @@
+PODS:
+  - GTThirdPlatformManager (0.0.1):
+    - GTThirdPlatformManager/Core (= 0.0.1)
+  - GTThirdPlatformManager/AlipayManager (0.0.1):
+    - GTThirdPlatformManager/Core
+  - GTThirdPlatformManager/Core (0.0.1):
+    - SDWebImage
+  - GTThirdPlatformManager/DingTalkManager (0.0.1):
+    - GTThirdPlatformManager/Core
+  - GTThirdPlatformManager/TencentManager (0.0.1):
+    - GTThirdPlatformManager/Core
+  - GTThirdPlatformManager/WeiboManager (0.0.1):
+    - GTThirdPlatformManager/Core
+    - WeiboSDK
+  - GTThirdPlatformManager/WXManager (0.0.1):
+    - GTThirdPlatformManager/Core
+    - WechatOpenSDK
+  - PTTestKit (0.1.0)
+  - SDWebImage (4.3.0):
+    - SDWebImage/Core (= 4.3.0)
+  - SDWebImage/Core (4.3.0)
+  - WechatOpenSDK (1.8.1)
+  - WeiboSDK (3.1.3)
+
+DEPENDENCIES:
+  - GTThirdPlatformManager (from `../`)
+  - GTThirdPlatformManager/AlipayManager (from `../`)
+  - GTThirdPlatformManager/DingTalkManager (from `../`)
+  - GTThirdPlatformManager/TencentManager (from `../`)
+  - GTThirdPlatformManager/WeiboManager (from `../`)
+  - GTThirdPlatformManager/WXManager (from `../`)
+  - PTTestKit (from `../../PTTestKit`)
+
+EXTERNAL SOURCES:
+  GTThirdPlatformManager:
+    :path: ../
+  PTTestKit:
+    :path: ../../PTTestKit
+
+SPEC CHECKSUMS:
+  GTThirdPlatformManager: a909b505f95f13b57a55734aadf8e67874cfff26
+  PTTestKit: 8a0f1c853c65b083571a6604ebd354a092c03019
+  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  WechatOpenSDK: 491d965d79335070328571d3e79f714549e79a5e
+  WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
+
+PODFILE CHECKSUM: 3988a2a3d93c4bae3cc19aba85d26839c8dbe89d
+
+COCOAPODS: 1.4.0

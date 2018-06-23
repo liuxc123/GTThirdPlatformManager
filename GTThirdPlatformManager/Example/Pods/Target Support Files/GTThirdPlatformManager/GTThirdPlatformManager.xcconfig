@@ -1,0 +1,12 @@
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/GTThirdPlatformManager
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../GTThirdPlatformManager/AlipayManager/Frameworks/AlipaySDK" "${PODS_ROOT}/../../GTThirdPlatformManager/DingTalkManager/Frameworks" "${PODS_ROOT}/../../GTThirdPlatformManager/TencentManager/Frameworks/TencentOpenSDK"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/GTThirdPlatformManager" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GTThirdPlatformManager" "${PODS_ROOT}/Headers/Public/PTTestKit" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/WechatOpenSDK" "${PODS_ROOT}/Headers/Public/WeiboSDK"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage"
+OTHER_LDFLAGS = -l"c++" -l"iconv" -l"sqlite3.0" -l"stdc++" -l"stdc++.6" -l"xml2" -l"z" -framework "AlipaySDK" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMotion" -framework "CoreTelephony" -framework "DTShareKit" -framework "Foundation" -framework "MapKit" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "TencentOpenAPI" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/../..
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES

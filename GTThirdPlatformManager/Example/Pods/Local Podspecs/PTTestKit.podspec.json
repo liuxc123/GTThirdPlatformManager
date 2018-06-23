@@ -1,0 +1,24 @@
+{
+  "name": "PTTestKit",
+  "version": "0.1.0",
+  "summary": "Wow PTTestKit.",
+  "description": "Wow this is a amazing kit,\nEnjoy yourself!",
+  "homepage": "https://github.com/flypigrmvb/PTTestKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "flypigrmvb": "862709539@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/flypigrmvb/PTTestKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PTTestKit/Classes/**/*",
+  "public_header_files": "PTTestKit/Classes/Public/**/*.h",
+  "private_header_files": "PTTestKit/Classes/Private/**/*.h"
+}

@@ -1,0 +1,1 @@
+../../../../../../GTThirdPlatformManager/TencentManager/Frameworks/TencentOpenSDK/TencentOpenAPI.framework/Headers/QQApiInterface.h

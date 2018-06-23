@@ -1,0 +1,1 @@
+../../../../../../GTThirdPlatformManager/AlipayManager/Frameworks/AlipaySDK/AlipaySDK.framework/Headers/AlipaySDK.h

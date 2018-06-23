@@ -1,0 +1,1 @@
+../../../../../GTThirdPlatformManager/WXManager/GTWXRespManager.h

@@ -1,0 +1,123 @@
+{
+  "name": "GTThirdPlatformManager",
+  "version": "0.0.1",
+  "summary": "对应用中集成的第三方SDK（目前包括QQ,微信,易信,支付宝）进行集中管理，按照功能（目前包括第三方登录,分享,支付）开放给各个产品使用。通过接口的方式进行产品集成，方便对第三方SDK进行升级维护。",
+  "homepage": "https://github.com/liuxc123/GTThirdPlatformManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liuxc123": "lxc_work@126.com"
+  },
+  "source": {
+    "git": "https://github.com/liuxc123/GTThirdPlatformManager.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "GTThirdPlatformManager/Classes/**/*",
+      "frameworks": [
+        "CoreMotion",
+        "UIKit",
+        "Foundation"
+      ],
+      "dependencies": {
+        "SDWebImage": [
+
+        ]
+      },
+      "libraries": [
+        "xml2",
+        "z",
+        "c++",
+        "stdc++.6",
+        "sqlite3.0"
+      ]
+    },
+    {
+      "name": "AlipayManager",
+      "source_files": "GTThirdPlatformManager/AlipayManager/**/*",
+      "resources": "GTThirdPlatformManager/AlipayManager/**/*.bundle",
+      "vendored_frameworks": "GTThirdPlatformManager/AlipayManager/**/*.framework",
+      "frameworks": [
+        "CoreTelephony",
+        "SystemConfiguration"
+      ],
+      "dependencies": {
+        "GTThirdPlatformManager/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "TencentManager",
+      "source_files": "GTThirdPlatformManager/TencentManager/**/*",
+      "vendored_frameworks": "GTThirdPlatformManager/TencentManager/**/*.framework",
+      "frameworks": [
+        "CoreTelephony",
+        "SystemConfiguration",
+        "Security",
+        "CoreGraphics",
+        "QuartzCore",
+        "MapKit",
+        "CoreLocation",
+        "AssetsLibrary"
+      ],
+      "libraries": [
+        "iconv",
+        "stdc++"
+      ],
+      "dependencies": {
+        "GTThirdPlatformManager/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "WeiboManager",
+      "source_files": "GTThirdPlatformManager/WeiboManager/**/*",
+      "dependencies": {
+        "WeiboSDK": [
+
+        ],
+        "GTThirdPlatformManager/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "WXManager",
+      "source_files": "GTThirdPlatformManager/WXManager/**/*",
+      "frameworks": [
+        "Security",
+        "CoreTelephony",
+        "SystemConfiguration"
+      ],
+      "dependencies": {
+        "WechatOpenSDK": [
+
+        ],
+        "GTThirdPlatformManager/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "DingTalkManager",
+      "source_files": "GTThirdPlatformManager/DingTalkManager/**/*",
+      "vendored_frameworks": "GTThirdPlatformManager/DingTalkManager/**/*.framework",
+      "frameworks": "SystemConfiguration",
+      "dependencies": {
+        "GTThirdPlatformManager/Core": [
+
+        ]
+      }
+    }
+  ]
+}
