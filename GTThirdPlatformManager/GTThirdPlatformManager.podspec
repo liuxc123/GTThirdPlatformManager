@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   # 定义一个核心模块，用户存放抽象的接口、基类以及一些公用的工具类和头文件
   s.subspec 'Core' do |subspec|
       # 源代码
-      subspec.source_files = 'GTThirdPlatformManager/Classes/**/*'
+      subspec.source_files = 'GTThirdPlatformManager/Classes/**/*.{h,m}'
       # 配置系统Framework
       subspec.frameworks = 'CoreMotion', 'UIKit', 'Foundation'
       subspec.dependency 'SDWebImage'
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # 支付宝模块
   s.subspec 'AlipayManager' do |subspec|
       # 源代码
-      subspec.source_files = 'GTThirdPlatformManager/AlipayManager/**/*'
+      subspec.source_files = 'GTThirdPlatformManager/AlipayManager/**/*.{h,m}'
       # 添加资源文件
       subspec.resource = 'GTThirdPlatformManager/AlipayManager/**/*.bundle'
       
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   # QQ模块
   s.subspec 'TencentManager' do |subspec|
       # 源代码
-      subspec.source_files = 'GTThirdPlatformManager/TencentManager/**/*'
+      subspec.source_files = 'GTThirdPlatformManager/TencentManager/**/*.{h,m}'
       # 添加依赖第三方的framework
       subspec.vendored_frameworks = 'GTThirdPlatformManager/TencentManager/**/*.framework'
       # 添加依赖系统的framework
@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
   # 微博模块
   s.subspec 'WeiboManager' do |subspec|
       # 源代码
-      subspec.source_files = 'GTThirdPlatformManager/WeiboManager/**/*'
+      subspec.source_files = 'GTThirdPlatformManager/WeiboManager/**/*.{h,m}'
       # 依赖的微博pod库
       subspec.dependency 'WeiboSDK'
       subspec.dependency 'GTThirdPlatformManager/Core'
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
   # 微信模块
   s.subspec 'WXManager' do |subspec|
       # 源代码
-      subspec.source_files = 'GTThirdPlatformManager/WXManager/**/*'
+      subspec.source_files = 'GTThirdPlatformManager/WXManager/**/*.{h,m}'
       # 配置系统Framework
       subspec.frameworks = 'Security', 'CoreTelephony', 'SystemConfiguration'
       # 依赖的微信pod库
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   # 钉钉模块
   s.subspec 'DingTalkManager' do |subspec|
       # 源代码
-      subspec.source_files = 'GTThirdPlatformManager/DingTalkManager/**/*'
+      subspec.source_files = 'GTThirdPlatformManager/DingTalkManager/**/*.{h,m}'
       # 添加依赖第三方的framework
       subspec.vendored_frameworks = 'GTThirdPlatformManager/DingTalkManager/**/*.framework'
       # 添加依赖系统的framework

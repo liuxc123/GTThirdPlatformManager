@@ -1,7 +1,7 @@
 {
   "name": "GTThirdPlatformManager",
   "version": "0.0.1",
-  "summary": "对应用中集成的第三方SDK（目前包括QQ,微信,易信,支付宝）进行集中管理，按照功能（目前包括第三方登录,分享,支付）开放给各个产品使用。通过接口的方式进行产品集成，方便对第三方SDK进行升级维护。",
+  "summary": "对应用中集成的第三方SDK（目前包括QQ,微信,微博,支付宝，钉钉）进行集中管理，按照功能（目前包括第三方登录,分享,支付）开放给各个产品使用。通过接口的方式进行产品集成，方便对第三方SDK进行升级维护。",
   "homepage": "https://github.com/liuxc123/GTThirdPlatformManager",
   "license": {
     "type": "MIT",
@@ -21,7 +21,7 @@
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "GTThirdPlatformManager/Classes/**/*",
+      "source_files": "GTThirdPlatformManager/Classes/**/*.{h,m}",
       "frameworks": [
         "CoreMotion",
         "UIKit",
@@ -42,7 +42,7 @@
     },
     {
       "name": "AlipayManager",
-      "source_files": "GTThirdPlatformManager/AlipayManager/**/*",
+      "source_files": "GTThirdPlatformManager/AlipayManager/**/*.{h,m}",
       "resources": "GTThirdPlatformManager/AlipayManager/**/*.bundle",
       "vendored_frameworks": "GTThirdPlatformManager/AlipayManager/**/*.framework",
       "frameworks": [
@@ -57,7 +57,7 @@
     },
     {
       "name": "TencentManager",
-      "source_files": "GTThirdPlatformManager/TencentManager/**/*",
+      "source_files": "GTThirdPlatformManager/TencentManager/**/*.{h,m}",
       "vendored_frameworks": "GTThirdPlatformManager/TencentManager/**/*.framework",
       "frameworks": [
         "CoreTelephony",
@@ -81,7 +81,7 @@
     },
     {
       "name": "WeiboManager",
-      "source_files": "GTThirdPlatformManager/WeiboManager/**/*",
+      "source_files": "GTThirdPlatformManager/WeiboManager/**/*.{h,m}",
       "dependencies": {
         "WeiboSDK": [
 
@@ -93,7 +93,7 @@
     },
     {
       "name": "WXManager",
-      "source_files": "GTThirdPlatformManager/WXManager/**/*",
+      "source_files": "GTThirdPlatformManager/WXManager/**/*.{h,m}",
       "frameworks": [
         "Security",
         "CoreTelephony",
@@ -110,7 +110,7 @@
     },
     {
       "name": "DingTalkManager",
-      "source_files": "GTThirdPlatformManager/DingTalkManager/**/*",
+      "source_files": "GTThirdPlatformManager/DingTalkManager/**/*.{h,m}",
       "vendored_frameworks": "GTThirdPlatformManager/DingTalkManager/**/*.framework",
       "frameworks": "SystemConfiguration",
       "dependencies": {

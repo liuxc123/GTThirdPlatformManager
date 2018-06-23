@@ -47,7 +47,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)addActionWithName:(NSString*)actionName callback:(void(^)())callback {
+- (void)addActionWithName:(NSString*)actionName callback:(void(^)(void))callback {
     ActionCellModel* model = [[ActionCellModel alloc] initWithActionName:actionName actionCallBack:^{
         !callback ?: callback();
     }];
